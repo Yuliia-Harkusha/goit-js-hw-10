@@ -40,7 +40,7 @@ function onSearchCountry() {
 
             if (countries.length === 1) {
                 const renderCard = countries.map(country => (renderCountryCard(country))).join('');
-                refs.countryInfo.insertAdjacentHTML('beforeend', renderCard);
+                refs.countryInfo.innerHTML = renderCard;
                 refs.countryList.innerHTML = '';
             };
     
